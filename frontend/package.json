@@ -1,0 +1,27 @@
+{
+  "name": "listmanager",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "core",
+      "web"
+    ]
+  },
+  "scripts": {
+    "web-dev": "yarn workspace @listmanager/web dev",
+    "web-analyze": "yarn workspace @listmanager/web analyze",
+    "web-build": "yarn workspace @listmanager/web build",
+    "web-start": "yarn workspace @listmanager/web start",
+    "web-lint": "yarn workspace @listmanager/web lint",
+    "web-test": "yarn workspace @listmanager/web test",
+    "web-test-dev": "yarn workspace @listmanager/web test:dev",
+    "web-test-open": "yarn workspace @listmanager/web test:open",
+    "web-test-run": "yarn workspace @listmanager/web test:run",
+    "web-storybook": "yarn workspace @listmanager/web storybook",
+    "web-storybook-build": "yarn workspace @listmanager/web storybook-build",
+    "core-lint": "yarn workspace @listmanager/core lint",
+    "lint": "yarn workspaces lint",
+    "ts-gql-gen": "yarn workspace @listmanager/core ts-gql-gen"
+  },
+  "packageManager": "yarn@3.2.1"
+}
